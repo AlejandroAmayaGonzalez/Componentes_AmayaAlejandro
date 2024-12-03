@@ -20,10 +20,10 @@ public class Main extends Application {
         Label lb = new Label("Probando componente");
 
         // CampoTextoBoton y CampotextoNumerico implementación
-        CampoTextoBoton ctb = new CampoTextoBoton();
+        OriginalCampoTextoBoton octb = new OriginalCampoTextoBoton();
         CampoTextoNumerico ctn = new CampoTextoNumerico();
 
-        vb1.getChildren().addAll(lb, ctb, ctn);
+        vb1.getChildren().addAll(lb, octb, ctn);
 
         // UseSelector implementación
         VBox vb2 = new VBox();
