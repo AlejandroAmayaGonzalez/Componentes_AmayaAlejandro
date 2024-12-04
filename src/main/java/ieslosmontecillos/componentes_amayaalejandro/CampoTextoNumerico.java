@@ -1,8 +1,6 @@
 package ieslosmontecillos.componentes_amayaalejandro;
 
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 import java.io.IOException;

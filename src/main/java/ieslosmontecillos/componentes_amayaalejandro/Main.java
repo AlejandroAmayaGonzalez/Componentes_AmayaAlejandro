@@ -20,10 +20,10 @@ public class Main extends Application {
         Label lb = new Label("Probando componente");
 
         // CampoTextoBoton y CampotextoNumerico implementación
-        OriginalCampoTextoBoton octb = new OriginalCampoTextoBoton();
+        CampoTextoBoton ctb = new CampoTextoBoton();
         CampoTextoNumerico ctn = new CampoTextoNumerico();
 
-        vb1.getChildren().addAll(lb, octb, ctn);
+        vb1.getChildren().addAll(lb, ctb, ctn);
 
         // UseSelector implementación
         VBox vb2 = new VBox();
@@ -48,11 +48,13 @@ public class Main extends Application {
         vb3.getChildren().addAll(ctb2, ctb3, lb_grabado);
 
         // Implementación del timer
+        Temporizador temp = new Temporizador();
+        temp.doCountdown();
 
         root.setSpacing(10);
-        root.getChildren().addAll(vb1, vb2, vb3);
+        root.getChildren().addAll(vb1, vb2, vb3, temp);
 
-        Scene scene = new Scene(root, 320, 240);
+        Scene scene = new Scene(root, 340, 260);
         stage.setTitle("Probar Componente");
         stage.setScene(scene);
         stage.show();
